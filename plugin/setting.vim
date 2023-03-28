@@ -186,7 +186,6 @@ fu! ChangeColor()
     execute('colorscheme ' . s:colorscheme_arr[localtime() % len(s:colorscheme_arr)])
   else
     execute('colorscheme ' . s:colorscheme_arr_default[localtime() % len(s:colorscheme_arr_default)])
-    cal SetStatusLine()
   endif
 endf
 cal ChangeColor()
